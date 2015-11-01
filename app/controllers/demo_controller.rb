@@ -6,6 +6,8 @@ class DemoController < ApplicationController
   def hello
   	# render('hello')
   	@array = [1,2,3,4,5]
+  	@id = params[:id].to_i
+  	@age= params[:age].to_i
   end
 
   def other_hello
